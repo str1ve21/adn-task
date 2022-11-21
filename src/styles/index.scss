@@ -1,0 +1,104 @@
+@import "const";
+@import "mixin";
+
+// PC
+
+body {
+  background: $dark-bg;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 105px;
+  padding: 0 48px;
+  gap: 30px;
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &-image {
+      height: max-content;
+    };
+    &-title {
+      @include font-size-heading($desktop-h1);
+      color: $white;
+    };
+  };
+  &__search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 672px;
+    width: 100%;
+    &-catalog {
+      @include font-size-span($desktop-span-small);
+      width: max-content;
+      padding: 11px 15px;
+      background: $white;
+      text-transform: uppercase;
+      border-radius: $rounded-full 0 0 $rounded-full;
+    };
+    &-input {
+      width: 100%;
+      padding: 11px 15px;
+      color: $white;
+      background: transparent;
+      border-radius: 0 $rounded-full $rounded-full 0;
+      border: 1px solid $white;
+    };
+    &-input:focus {
+      background: $dark-gray;
+    };
+    &-status {
+      position: absolute;
+      right: 15px;
+    };
+    &-input:focus + &-status {
+      display: none;
+    };
+    &-status_focused {
+      cursor: pointer;
+    };
+    &-input:not(:focus) ~ &-status_focused {
+      display: none;
+    };
+  };
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  };
+  &__menu_media_phone {
+    display: none;
+  };
+};
+
+// Tablet
+
+@media (max-width: 768px) {
+  .header {
+    height: 94px;
+    &__logo {    
+      &-image {
+        height: 18px;
+      };
+      &-title {
+        @include font-size-heading($mobile-h1);
+        color: $white;
+      };
+    };
+    &__search {
+      display: none;
+    };
+    &__menu_media_pc {
+      display: none;
+    };
+    &__menu_media_phone {
+      display: flex;
+    };
+  };
+};
+
+// Phone

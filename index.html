@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/logo.svg">
+    <title>turbinary</title>
+    <!-- Fonts (used Montserrat instead of Grato Grotesk CY) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="header__logo">
+        <img class="header__logo-image" src="./src/assets/logo.svg" alt="IMG Logo">
+        <h1 class="header__logo-title">turbinary</h1>
+      </a>
+      <div class="header__search">
+        <button class="header__search-catalog">Каталог</button>
+        <input id="headerSearch" class="header__search-input" type="text" />
+        <img class="header__search-status" src="./src/assets/header-search/search.svg" alt="Search">
+        <img id="clearHeaderSearch" class="header__search-status header__search-status_focused" src="./src/assets/header-search/close.svg" alt="Close">
+      </div>
+      <div class="header__menu header__menu_media_pc">
+        <button class="header__menu-button">
+          <img src="./src/assets/header-menu/user.svg" alt="User">
+        </button class="header__menu-button">
+        <button>
+          <img src="./src/assets/header-menu/heart.svg" alt="Heart">
+        </button>
+        <button class="header__menu-button">
+          <img src="./src/assets/header-menu/cart.svg" alt="Cart">
+        </button>
+      </div>
+      <div class="header__menu header__menu_media_phone">
+        <button class="header__menu-button">
+          <img src="./src/assets/header-menu/search-sm.svg" alt="Search">
+        </button class="header__menu-button">
+        <button class="header__menu-button">
+          <img src="./src/assets/header-menu/cart-sm.svg" alt="Cart">
+        </button>
+        <button class="header__menu-button">
+          <img src="./src/assets/header-menu/menu-sm.svg" alt="Menu">
+        </button>
+      </div>
+    </header>
+    <main class="catalog">
+      <aside class="filter"></aside>
+      <section id="games" class="content">
+        <!-- div.content__game-item inject by JS -->
+      </section>
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html>

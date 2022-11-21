@@ -1,0 +1,17 @@
+@import "const";
+
+@mixin font-size-heading($value) {
+  font-family: $font-heading;
+  font-style: normal;
+  font-size: $value;
+  font-weight: 700;
+  line-height: 130%;
+};
+
+@mixin font-size-span($value) {
+  font-family: $font-heading;
+  font-style: normal;
+  font-size: $value;
+  font-weight: 700;
+  line-height: 120%;
+};
