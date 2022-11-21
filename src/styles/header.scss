@@ -3,10 +3,6 @@
 
 // PC
 
-body {
-  background: $dark-bg;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -23,7 +19,7 @@ body {
       height: max-content;
     }
     &-title {
-      @include font-size-heading($desktop-h1);
+      @include font-size-span-regular($desktop-h1);
       color: $white;
     }
   }
@@ -34,7 +30,7 @@ body {
     max-width: 672px;
     width: 100%;
     &-catalog {
-      @include font-size-span($desktop-span-small);
+      @include font-size-span-bold($desktop-span-small);
       @include transition($transition);
       width: max-content;
       padding: 11px 15px;
@@ -47,9 +43,9 @@ body {
       color: $white;
     }
     &-input {
+      @include font-size-span-regular($desktop-span);
       width: 100%;
-      padding: 11px 15px;
-      color: $white;
+      padding: 8px 15px;
       background: transparent;
       border-radius: 0 $rounded-full $rounded-full 0;
       border: 1px solid $white;

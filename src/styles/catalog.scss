@@ -1,0 +1,88 @@
+@import "const";
+@import "mixin";
+
+.catalog {
+  max-width: 1176px;
+  margin: 0 auto;
+  padding: 0 50px;
+  .content {
+    display: flex;
+    gap: 30px;
+    .games__list {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      &-item {
+        width: 100%;
+        border-radius: 40px;
+      }
+    }
+  }
+  .link {
+    @include font-size-span-regular($desktop-span-small);
+    margin-bottom: $desktop-margin-xs;
+    &__item {
+      color: $white;
+    }
+    &__next {
+      color: $white;
+    }
+  }
+  &__title {
+    @include font-size-heading($desktop-h1);
+    margin-bottom: $desktop-margin-m;
+    color: $white;
+  }
+  &__title sup {
+    @include font-size-heading($desktop-h5);
+    position: relative;
+    top: -10px;
+    left: 5px;
+    color: $orange;
+  }
+  .filter {
+    max-width: 220px;
+    &__element {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px dotted $gray;
+      margin-bottom: $mobile-margin-s;
+      cursor: pointer;
+      &-span {
+        @include font-size-heading($desktop-h4);
+        color: $white;
+        margin-bottom: $mobile-margin-s;
+      }
+      &-arrow {
+        @include transition($transition);
+        margin-bottom: $mobile-margin-s;
+      }
+      &-arrow_rotated {
+        transform: rotate(180deg);
+      }
+    }
+    &__price {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-bottom: 2px dotted $gray;
+      margin-bottom: $mobile-margin-s;
+      cursor: pointer;
+      &-span {
+        @include font-size-heading($desktop-h4);
+        color: $white;
+        margin-bottom: $mobile-margin-s;
+      }
+      &-form {
+        display: flex;
+        gap: 10px;
+        margin-bottom: $mobile-margin-s;
+      }
+      &-input {
+        @include font-size-span-regular($desktop-span);
+        width: 50%;
+        padding: 6px 8px;
+        border-radius: $rounded-full;
+      }
+    }
+  }
+}

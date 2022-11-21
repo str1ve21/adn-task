@@ -8,12 +8,20 @@
   line-height: 130%;
 }
 
-@mixin font-size-span($value) {
+@mixin font-size-span-bold($value) {
   font-family: $font-heading;
   font-style: normal;
   font-size: $value;
   font-weight: 700;
   line-height: 120%;
+}
+
+@mixin font-size-span-regular($value) {
+  font-family: $font-heading;
+  font-style: normal;
+  font-size: $value;
+  font-weight: 400;
+  line-height: 130%;
 }
 
 @mixin transition($value) {

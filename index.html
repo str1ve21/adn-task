@@ -10,7 +10,8 @@
   <!-- Fonts (used Montserrat instead of Grato Grotesk CY) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Montserrat:wght@400&family=Open+Sans&display=swap"
     rel="stylesheet">
 </head>
 
@@ -18,7 +19,7 @@
   <header class="header">
     <a href="#" class="header__logo">
       <img class="header__logo-image" src="./src/assets/logo.svg" alt="IMG Logo">
-      <h1 class="header__logo-title">turbinary</h1>
+      <span class="header__logo-title">turbinary</ы>
     </a>
     <div class="header__search">
       <button class="header__search-catalog">Каталог</button>
@@ -33,7 +34,6 @@
           <path fill-rule="evenodd" clip-rule="evenodd"
             d="M15.1383 11.9241C16.7793 10.7401 17.8517 8.77604 17.8517 6.55172C17.8517 2.93103 15.0102 0 11.5 0C7.98983 0 5.14826 2.93103 5.14826 6.55172C5.14826 8.77603 6.22069 10.7401 7.86174 11.9241C8.22398 12.1855 8.61393 12.4089 9.02616 12.5887C9.78632 12.9202 10.6223 13.1034 11.5 13.1034C12.3777 13.1034 13.2137 12.9202 13.9738 12.5887C14.3861 12.4089 14.776 12.1855 15.1383 11.9241ZM15.5924 14.0117C15.0672 13.9134 14.5263 13.8621 13.9738 13.8621H9.02616C8.47372 13.8621 7.93279 13.9134 7.40761 14.0117C3.19755 14.7995 0 18.6043 0 23.1724V26.9655C0 27.5517 0.434593 28 1.00291 28H21.9971C22.5654 28 23 27.5517 23 26.9655V23.1724C23 18.6043 19.8025 14.7995 15.5924 14.0117ZM11.5 2C9.15239 2 7.14826 3.97671 7.14826 6.55172C7.14826 9.12673 9.15239 11.1034 11.5 11.1034C13.8476 11.1034 15.8517 9.12673 15.8517 6.55172C15.8517 3.97671 13.8476 2 11.5 2ZM13.9738 15.8621H9.02616C5.20761 15.8621 2 19.0802 2 23.1724V26H21V23.1724C21 19.0802 17.7924 15.8621 13.9738 15.8621Z" />
         </svg>
-
       </button>
       <button class="header__menu-button">
         <svg width="29" height="25" viewBox="0 0 29 25" xmlns="http://www.w3.org/2000/svg">
@@ -84,10 +84,66 @@
     </div>
   </header>
   <main class="catalog">
-    <aside class="filter"></aside>
-    <section id="games" class="content">
-      <!-- div.content__game-item inject by JS -->
-    </section>
+    <div class="link">
+      <a class="link__item" href="#">Главная страница</a>
+      <span class="link__next">></span>
+      <a class="link__item" href="#">Каталог</a>
+    </div>
+    <h1 class="catalog__title">Каталог<sup>876</sup></h1>
+    <div class="content">
+      <aside class="filter">
+        <div id="filter__element-1" class="filter__element">
+          <span class="filter__element-span">По популярности</span>
+          <img class="filter__element-arrow" src="./src/assets/aside/arrow.svg" alt="Arrow">
+        </div>
+        <div class="filter__price">
+          <span class="filter__price-span">Цена, ₽</span>
+          <div class="filter__price-form">
+            <input type="number" placeholder="от" id="priceInput1" class="filter__price-input">
+            <input type="number" placeholder="до" id="priceInput2" class="filter__price-input">
+          </div>
+        </div>
+        <div id="filter__element-2" class="filter__element">
+          <span class="filter__element-span">Жанр</span>
+          <img class="filter__element-arrow" src="./src/assets/aside/arrow.svg" alt="Arrow">
+        </div>
+        <div id="filter__element-3" class="filter__element">
+          <span class="filter__element-span">Платформы</span>
+          <img class="filter__element-arrow" src="./src/assets/aside/arrow.svg" alt="Arrow">
+        </div>
+        <div id="filter__element-4" class="filter__element">
+          <span class="filter__element-span">Активация</span>
+          <img class="filter__element-arrow" src="./src/assets/aside/arrow.svg" alt="Arrow">
+        </div>
+        <div id="filter__element-5" class="filter__element">
+          <span class="filter__element-span">Разработчик</span>
+          <img class="filter__element-arrow" src="./src/assets/aside/arrow.svg" alt="Arrow">
+        </div>
+        <div id="filter__element-6" class="filter__element">
+          <span class="filter__element-span">Издатель</span>
+          <img class="filter__element-arrow" src="./src/assets/aside/arrow.svg" alt="Arrow">
+        </div>
+        <div id="filter__element-7" class="filter__element">
+          <span class="filter__element-span">Особенности</span>
+          <img class="filter__element-arrow" src="./src/assets/aside/arrow.svg" alt="Arrow">
+        </div>
+        <div id="filter__element-8" class="filter__element">
+          <span class="filter__element-span">Тип товара</span>
+          <img class="filter__element-arrow" src="./src/assets/aside/arrow.svg" alt="Arrow">
+        </div>
+      </aside>
+      <section class="games">
+        <div id="games__list" class="games__list">
+          <!-- div.games__list-item inject by JS -->
+        </div>
+        <div class="games__info">
+
+        </div>
+      </section>
+    </div>
+    <div class="catalog__shop-info">
+
+    </div>
   </main>
   <footer class="footer"></footer>
 </body>
