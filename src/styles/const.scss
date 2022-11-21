@@ -1,23 +1,23 @@
 // colors
-$orange: #FF5C00;
+$orange: #ff5c00;
 $dark-bg: #141414;
-$light-orange: #FFB680;
+$light-orange: #ffb680;
 $black: #000000;
 $dark-gray: #262626;
 $header-catalog: #333333;
 $gray: #707070;
-$light-gray: #AAAAAA;
+$light-gray: #aaaaaa;
 $white: #ffffff;
-$link: #2C80FF;
-$label-blue: #00FFF0;
-$label-green: #00FF66;
-$error: #FF5353;
-$success: #25D189;
-$notification: #30606F;
+$link: #2c80ff;
+$label-blue: #00fff0;
+$label-green: #00ff66;
+$error: #ff5353;
+$success: #25d189;
+$notification: #30606f;
 
 // fonts
-$font-heading: 'Montserrat', sans-serif;
-$font-text: 'Open Sans', sans-serif;
+$font-heading: "Montserrat", sans-serif;
+$font-text: "Open Sans", sans-serif;
 
 // fonts/heading
 $desktop-h1: 36px;
@@ -57,23 +57,24 @@ $mobile-span-small: 12px;
 $mobile-span-tiny: 10px;
 
 // margins
-$desktop-2xl: 136px;
-$desktop-xl: 80px;
-$desktop-l: 64px;
-$desktop-m: 40px;
-$desktop-s: 32px;
-$desktop-xs: 24px;
-$desktop-2xs: 16px;
-$desktop-3xs: 8px;
+$desktop-margin-2xl: 136px;
+$desktop-margin-xl: 80px;
+$desktop-margin-l: 64px;
+$desktop-margin-m: 40px;
+$desktop-margin-s: 32px;
+$desktop-margin-xs: 24px;
+$desktop-margin-2xs: 16px;
+$desktop-margin-3xs: 8px;
 
-$mobile-2xl: 96px;
-$mobile-xl: 64px;
-$mobile-l: 40px;
-$mobile-m: 32px;
-$mobile-s: 24px;
-$mobile-xs: 16px;
-$mobile-2xs: 8px;
-$mobile-3xs: 4px;
+$mobile-margin-2xl: 96px;
+$mobile-margin-xl: 64px;
+$mobile-margin-l: 40px;
+$mobile-margin-m: 32px;
+$mobile-margin-s: 24px;
+$mobile-margin-xs: 16px;
+$mobile-margin-2xs: 8px;
+$mobile-margin-3xs: 4px;
 
 // properties
 $rounded-full: 9999px;
+$transition: 200ms;
