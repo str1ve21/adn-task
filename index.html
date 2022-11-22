@@ -1,372 +1,248 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="./src/assets/logo.svg" />
-    <title>turbinary</title>
-    <!-- Fonts (used Montserrat instead of Grato Grotesk CY) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Montserrat:wght@400&family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header class="header">
-      <a href="#" class="header__logo">
-        <img
-          class="header__logo-image"
-          src="./src/assets/logo.svg"
-          alt="IMG Logo"
-        />
-        <span class="header__logo-title">turbinary</span>
-      </a>
-      <div class="header__search">
-        <button class="header__search-catalog">Каталог</button>
-        <input id="headerSearch" class="header__search-input" type="text" />
-        <img
-          class="header__search-status"
-          src="./src/assets/header-search/search.svg"
-          alt="Search"
-        />
-        <img
-          id="clearHeaderSearch"
-          class="header__search-status header__search-status_focused"
-          src="./src/assets/header-search/close.svg"
-          alt="Close"
-        />
-      </div>
-      <div class="header__menu header__menu_media_pc">
-        <button class="header__menu-button">
-          <svg
-            width="23"
-            height="28"
-            viewBox="0 0 23 28"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M15.1383 11.9241C16.7793 10.7401 17.8517 8.77604 17.8517 6.55172C17.8517 2.93103 15.0102 0 11.5 0C7.98983 0 5.14826 2.93103 5.14826 6.55172C5.14826 8.77603 6.22069 10.7401 7.86174 11.9241C8.22398 12.1855 8.61393 12.4089 9.02616 12.5887C9.78632 12.9202 10.6223 13.1034 11.5 13.1034C12.3777 13.1034 13.2137 12.9202 13.9738 12.5887C14.3861 12.4089 14.776 12.1855 15.1383 11.9241ZM15.5924 14.0117C15.0672 13.9134 14.5263 13.8621 13.9738 13.8621H9.02616C8.47372 13.8621 7.93279 13.9134 7.40761 14.0117C3.19755 14.7995 0 18.6043 0 23.1724V26.9655C0 27.5517 0.434593 28 1.00291 28H21.9971C22.5654 28 23 27.5517 23 26.9655V23.1724C23 18.6043 19.8025 14.7995 15.5924 14.0117ZM11.5 2C9.15239 2 7.14826 3.97671 7.14826 6.55172C7.14826 9.12673 9.15239 11.1034 11.5 11.1034C13.8476 11.1034 15.8517 9.12673 15.8517 6.55172C15.8517 3.97671 13.8476 2 11.5 2ZM13.9738 15.8621H9.02616C5.20761 15.8621 2 19.0802 2 23.1724V26H21V23.1724C21 19.0802 17.7924 15.8621 13.9738 15.8621Z"
-            />
-          </svg>
-        </button>
-        <button class="header__menu-button">
-          <svg
-            width="29"
-            height="25"
-            viewBox="0 0 29 25"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M7.69976 0C5.72297 0 3.74905 0.761637 2.24884 2.2669C-0.751535 5.27745 -0.747691 10.1422 2.24884 13.1547L13.7173 24.6791C13.8186 24.7807 13.9394 24.8614 14.0727 24.9165C14.206 24.9716 14.3491 25 14.4936 25C14.6381 25 14.7812 24.9716 14.9145 24.9165C15.0478 24.8614 15.1686 24.7807 15.2699 24.6791C19.097 20.8391 22.9226 17.0059 26.7497 13.1659C29.7501 10.1554 29.7501 5.28861 26.7497 2.27807C23.7493 -0.732467 18.837 -0.732503 15.8365 2.27807L14.4993 3.61811L13.1507 2.2669C11.6505 0.761637 9.67655 0 7.69976 0ZM7.69976 2.12173C9.10485 2.12173 10.507 2.66845 11.5981 3.76328L13.7287 5.89618C13.8299 5.9978 13.9507 6.07852 14.084 6.13361C14.2173 6.18871 14.3604 6.21708 14.5049 6.21708C14.6495 6.21708 14.7925 6.18871 14.9258 6.13361C15.0591 6.07852 15.1799 5.9978 15.2812 5.89618L17.3891 3.77445C19.5714 1.58475 23.0149 1.58478 25.1972 3.77445C27.3795 5.96411 27.3795 9.46871 25.1972 11.6584C21.6302 15.2373 18.0663 18.8221 14.4993 22.4011L3.80138 11.6472C1.62035 9.45451 1.61912 5.95294 3.80138 3.76328C4.89256 2.66845 6.29467 2.12173 7.69976 2.12173Z"
-            />
-          </svg>
-        </button>
-        <button class="header__menu-button">
-          <svg
-            width="30"
-            height="29"
-            viewBox="0 0 30 29"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M10.9989 23.0003C9.34291 23.0003 7.99891 24.3443 7.99891 26.0003C7.99891 27.6563 9.34291 29.0003 10.9989 29.0003C12.6549 29.0003 13.9989 27.6563 13.9989 26.0003C13.9989 24.3443 12.6549 23.0003 10.9989 23.0003ZM10.9989 25.0003C11.5509 25.0003 11.9989 25.4483 11.9989 26.0003C11.9989 26.5523 11.5509 27.0003 10.9989 27.0003C10.4469 27.0003 9.99891 26.5523 9.99891 26.0003C9.99891 25.4483 10.4469 25.0003 10.9989 25.0003Z"
-            />
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M22.9983 23.0003C21.3423 23.0003 19.9983 24.3443 19.9983 26.0003C19.9983 27.6563 21.3423 29.0003 22.9983 29.0003C24.6543 29.0003 25.9983 27.6563 25.9983 26.0003C25.9983 24.3443 24.6543 23.0003 22.9983 23.0003ZM22.9983 25.0003C23.5503 25.0003 23.9983 25.4483 23.9983 26.0003C23.9983 26.5523 23.5503 27.0003 22.9983 27.0003C22.4463 27.0003 21.9983 26.5523 21.9983 26.0003C21.9983 25.4483 22.4463 25.0003 22.9983 25.0003Z"
-            />
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M3.292 2.836C3.588 4.611 6.683 19.629 6.683 19.629C6.98 21.012 8.202 22 9.617 22C13.036 22 20.964 22 24.383 22C25.798 22 27.02 21.012 27.317 19.629L29.459 9.629C29.649 8.743 29.429 7.81901 28.859 7.11401C28.289 6.40901 27.432 6 26.526 6H5.847L5.265 2.50699C5.024 1.05999 3.772 0 2.306 0C1.626 0 1 0 1 0C0.448 0 0 0.448 0 1C0 1.552 0.448 2 1 2H2.306C2.795 2 3.212 2.353 3.292 2.836ZM27.504 9.20999L25.361 19.21C25.262 19.671 24.855 20 24.383 20C20.964 20 13.036 20 9.617 20C9.145 20 8.738 19.671 8.639 19.21L6.237 8H26.526C26.828 8 27.114 8.136 27.304 8.371C27.494 8.606 27.567 8.91399 27.504 9.20999Z"
-            />
-          </svg>
-        </button>
-      </div>
-      <div class="header__menu header__menu_media_phone">
-        <button class="header__menu-button">
-          <svg
-            width="22"
-            height="22"
-            viewBox="0 0 22 22"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M9.7605 0.5C4.65431 0.5 0.5 4.65283 0.5 9.75726C0.5 14.8617 4.65435 19.0145 9.7605 19.0145C14.8666 19.0145 19.021 14.8617 19.021 9.75726C19.021 4.65283 14.8667 0.5 9.7605 0.5ZM9.7605 17.4927C5.4913 17.4927 2.01812 14.0224 2.01812 9.75722C2.01812 5.49177 5.4913 2.0217 9.7605 2.0217C14.0297 2.0217 17.5029 5.49177 17.5029 9.75722C17.5029 14.0224 14.0297 17.4927 9.7605 17.4927Z"
-            />
-            <path
-              d="M21.2764 20.1997L16.2919 15.2287C15.9946 14.9324 15.5141 14.9337 15.2183 15.2315C14.9228 15.5295 14.9241 16.0111 15.2211 16.3076L20.2056 21.2786C20.3539 21.4262 20.5472 21.5 20.741 21.5C20.9361 21.5 21.1309 21.4252 21.2792 21.2758C21.5747 20.9778 21.5734 20.4961 21.2764 20.1997Z"
-            />
-          </svg>
-        </button>
-        <button class="header__menu-button">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M9.12109 17.9395C7.45019 17.9395 6.09082 19.2988 6.09082 20.9697C6.09082 22.6406 7.45019 24 9.12109 24C10.792 24 12.1514 22.6406 12.1514 20.9697C12.1514 19.2988 10.7919 17.9395 9.12109 17.9395ZM9.12109 22.1818C8.45261 22.1818 7.909 21.6382 7.909 20.9697C7.909 20.3012 8.45261 19.7576 9.12109 19.7576C9.78924 19.7576 10.3332 20.3012 10.3332 20.9697C10.3332 21.6381 9.78957 22.1818 9.12109 22.1818Z"
-            />
-            <path
-              d="M18.0911 17.9395C16.4202 17.9395 15.0608 19.2988 15.0608 20.9697C15.0608 22.6406 16.4202 24 18.0911 24C19.762 24 21.1213 22.6406 21.1213 20.9697C21.1213 19.2988 19.762 17.9395 18.0911 17.9395ZM18.0911 22.1818C17.4226 22.1818 16.879 21.6382 16.879 20.9697C16.879 20.3012 17.4226 19.7576 18.0911 19.7576C18.7595 19.7576 19.3031 20.3012 19.3031 20.9697C19.3031 21.6381 18.7595 22.1818 18.0911 22.1818Z"
-            />
-            <path
-              d="M23.3478 5.91907C23.175 5.70209 22.9132 5.57576 22.6363 5.57576H6.71837L5.89201 1.39946C5.81959 1.03369 5.53112 0.749162 5.16414 0.681896L1.52782 0.0152435C1.03301 -0.0759748 0.560282 0.251633 0.469673 0.745552C0.379064 1.23947 0.706016 1.71309 1.19998 1.8037L4.22842 2.35884L6.89626 15.8432C6.98049 16.2689 7.35413 16.5759 7.78805 16.5759H20.5151C20.9384 16.5759 21.3054 16.2841 21.4009 15.871L23.522 6.68937C23.5844 6.41937 23.5202 6.13573 23.3478 5.91907ZM19.7921 14.7577H8.53467L7.07804 7.39422H21.4929L19.7921 14.7577Z"
-            />
-          </svg>
-        </button>
-        <button class="header__menu-button">
-          <svg
-            width="24"
-            height="14"
-            viewBox="0 0 24 14"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M0.75 1C0.75 0.585786 1.08579 0.25 1.5 0.25H22.5C22.9142 0.25 23.25 0.585786 23.25 1C23.25 1.41421 22.9142 1.75 22.5 1.75H1.5C1.08579 1.75 0.75 1.41421 0.75 1Z"
-            />
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M0.75 7C0.75 6.58579 1.08579 6.25 1.5 6.25H22.5C22.9142 6.25 23.25 6.58579 23.25 7C23.25 7.41421 22.9142 7.75 22.5 7.75H1.5C1.08579 7.75 0.75 7.41421 0.75 7Z"
-            />
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M0.75 13C0.75 12.5858 1.08579 12.25 1.5 12.25H22.5C22.9142 12.25 23.25 12.5858 23.25 13C23.25 13.4142 22.9142 13.75 22.5 13.75H1.5C1.08579 13.75 0.75 13.4142 0.75 13Z"
-            />
-          </svg>
-        </button>
-      </div>
-    </header>
-    <main class="catalog">
-      <div class="link">
-        <a class="link__item" href="#">Главная страница</a>
-        <span class="link__next">></span>
-        <a class="link__item" href="#">Каталог</a>
-      </div>
-      <h1 class="catalog__title">Каталог<sup>876</sup></h1>
-      <div class="content">
-        <aside class="filter">
-          <div id="filter__element-1" class="filter__element">
-            <span class="filter__element-span">По популярности</span>
-            <img
-              class="filter__element-arrow"
-              src="./src/assets/aside/arrow.svg"
-              alt="Arrow"
-            />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="./src/assets/logo.svg" />
+  <title>turbinary</title>
+  <!-- Fonts (used Montserrat instead of Grato Grotesk CY) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Montserrat:wght@400&family=Open+Sans&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="header__logo">
+      <img class="header__logo-image" src="./src/assets/logo.svg" alt="IMG Logo" />
+      <span class="header__logo-title">turbinary</span>
+    </a>
+    <div class="header__search">
+      <button class="header__search-catalog">Каталог</button>
+      <input id="headerSearch" class="header__search-input" type="text" />
+      <img class="header__search-status" src="./src/assets/header-search/search.svg" alt="Search" />
+      <img id="clearHeaderSearch" class="header__search-status header__search-status_focused"
+        src="./src/assets/header-search/close.svg" alt="Close" />
+    </div>
+    <div class="header__menu header__menu_media_pc">
+      <button class="header__menu-button">
+        <svg width="23" height="28" viewBox="0 0 23 28" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M15.1383 11.9241C16.7793 10.7401 17.8517 8.77604 17.8517 6.55172C17.8517 2.93103 15.0102 0 11.5 0C7.98983 0 5.14826 2.93103 5.14826 6.55172C5.14826 8.77603 6.22069 10.7401 7.86174 11.9241C8.22398 12.1855 8.61393 12.4089 9.02616 12.5887C9.78632 12.9202 10.6223 13.1034 11.5 13.1034C12.3777 13.1034 13.2137 12.9202 13.9738 12.5887C14.3861 12.4089 14.776 12.1855 15.1383 11.9241ZM15.5924 14.0117C15.0672 13.9134 14.5263 13.8621 13.9738 13.8621H9.02616C8.47372 13.8621 7.93279 13.9134 7.40761 14.0117C3.19755 14.7995 0 18.6043 0 23.1724V26.9655C0 27.5517 0.434593 28 1.00291 28H21.9971C22.5654 28 23 27.5517 23 26.9655V23.1724C23 18.6043 19.8025 14.7995 15.5924 14.0117ZM11.5 2C9.15239 2 7.14826 3.97671 7.14826 6.55172C7.14826 9.12673 9.15239 11.1034 11.5 11.1034C13.8476 11.1034 15.8517 9.12673 15.8517 6.55172C15.8517 3.97671 13.8476 2 11.5 2ZM13.9738 15.8621H9.02616C5.20761 15.8621 2 19.0802 2 23.1724V26H21V23.1724C21 19.0802 17.7924 15.8621 13.9738 15.8621Z" />
+        </svg>
+      </button>
+      <button class="header__menu-button">
+        <svg width="29" height="25" viewBox="0 0 29 25" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M7.69976 0C5.72297 0 3.74905 0.761637 2.24884 2.2669C-0.751535 5.27745 -0.747691 10.1422 2.24884 13.1547L13.7173 24.6791C13.8186 24.7807 13.9394 24.8614 14.0727 24.9165C14.206 24.9716 14.3491 25 14.4936 25C14.6381 25 14.7812 24.9716 14.9145 24.9165C15.0478 24.8614 15.1686 24.7807 15.2699 24.6791C19.097 20.8391 22.9226 17.0059 26.7497 13.1659C29.7501 10.1554 29.7501 5.28861 26.7497 2.27807C23.7493 -0.732467 18.837 -0.732503 15.8365 2.27807L14.4993 3.61811L13.1507 2.2669C11.6505 0.761637 9.67655 0 7.69976 0ZM7.69976 2.12173C9.10485 2.12173 10.507 2.66845 11.5981 3.76328L13.7287 5.89618C13.8299 5.9978 13.9507 6.07852 14.084 6.13361C14.2173 6.18871 14.3604 6.21708 14.5049 6.21708C14.6495 6.21708 14.7925 6.18871 14.9258 6.13361C15.0591 6.07852 15.1799 5.9978 15.2812 5.89618L17.3891 3.77445C19.5714 1.58475 23.0149 1.58478 25.1972 3.77445C27.3795 5.96411 27.3795 9.46871 25.1972 11.6584C21.6302 15.2373 18.0663 18.8221 14.4993 22.4011L3.80138 11.6472C1.62035 9.45451 1.61912 5.95294 3.80138 3.76328C4.89256 2.66845 6.29467 2.12173 7.69976 2.12173Z" />
+        </svg>
+      </button>
+      <button class="header__menu-button">
+        <svg width="30" height="29" viewBox="0 0 30 29" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M10.9989 23.0003C9.34291 23.0003 7.99891 24.3443 7.99891 26.0003C7.99891 27.6563 9.34291 29.0003 10.9989 29.0003C12.6549 29.0003 13.9989 27.6563 13.9989 26.0003C13.9989 24.3443 12.6549 23.0003 10.9989 23.0003ZM10.9989 25.0003C11.5509 25.0003 11.9989 25.4483 11.9989 26.0003C11.9989 26.5523 11.5509 27.0003 10.9989 27.0003C10.4469 27.0003 9.99891 26.5523 9.99891 26.0003C9.99891 25.4483 10.4469 25.0003 10.9989 25.0003Z" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M22.9983 23.0003C21.3423 23.0003 19.9983 24.3443 19.9983 26.0003C19.9983 27.6563 21.3423 29.0003 22.9983 29.0003C24.6543 29.0003 25.9983 27.6563 25.9983 26.0003C25.9983 24.3443 24.6543 23.0003 22.9983 23.0003ZM22.9983 25.0003C23.5503 25.0003 23.9983 25.4483 23.9983 26.0003C23.9983 26.5523 23.5503 27.0003 22.9983 27.0003C22.4463 27.0003 21.9983 26.5523 21.9983 26.0003C21.9983 25.4483 22.4463 25.0003 22.9983 25.0003Z" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M3.292 2.836C3.588 4.611 6.683 19.629 6.683 19.629C6.98 21.012 8.202 22 9.617 22C13.036 22 20.964 22 24.383 22C25.798 22 27.02 21.012 27.317 19.629L29.459 9.629C29.649 8.743 29.429 7.81901 28.859 7.11401C28.289 6.40901 27.432 6 26.526 6H5.847L5.265 2.50699C5.024 1.05999 3.772 0 2.306 0C1.626 0 1 0 1 0C0.448 0 0 0.448 0 1C0 1.552 0.448 2 1 2H2.306C2.795 2 3.212 2.353 3.292 2.836ZM27.504 9.20999L25.361 19.21C25.262 19.671 24.855 20 24.383 20C20.964 20 13.036 20 9.617 20C9.145 20 8.738 19.671 8.639 19.21L6.237 8H26.526C26.828 8 27.114 8.136 27.304 8.371C27.494 8.606 27.567 8.91399 27.504 9.20999Z" />
+        </svg>
+      </button>
+    </div>
+    <div class="header__menu header__menu_media_phone">
+      <button class="header__menu-button">
+        <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M9.7605 0.5C4.65431 0.5 0.5 4.65283 0.5 9.75726C0.5 14.8617 4.65435 19.0145 9.7605 19.0145C14.8666 19.0145 19.021 14.8617 19.021 9.75726C19.021 4.65283 14.8667 0.5 9.7605 0.5ZM9.7605 17.4927C5.4913 17.4927 2.01812 14.0224 2.01812 9.75722C2.01812 5.49177 5.4913 2.0217 9.7605 2.0217C14.0297 2.0217 17.5029 5.49177 17.5029 9.75722C17.5029 14.0224 14.0297 17.4927 9.7605 17.4927Z" />
+          <path
+            d="M21.2764 20.1997L16.2919 15.2287C15.9946 14.9324 15.5141 14.9337 15.2183 15.2315C14.9228 15.5295 14.9241 16.0111 15.2211 16.3076L20.2056 21.2786C20.3539 21.4262 20.5472 21.5 20.741 21.5C20.9361 21.5 21.1309 21.4252 21.2792 21.2758C21.5747 20.9778 21.5734 20.4961 21.2764 20.1997Z" />
+        </svg>
+      </button>
+      <button class="header__menu-button">
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M9.12109 17.9395C7.45019 17.9395 6.09082 19.2988 6.09082 20.9697C6.09082 22.6406 7.45019 24 9.12109 24C10.792 24 12.1514 22.6406 12.1514 20.9697C12.1514 19.2988 10.7919 17.9395 9.12109 17.9395ZM9.12109 22.1818C8.45261 22.1818 7.909 21.6382 7.909 20.9697C7.909 20.3012 8.45261 19.7576 9.12109 19.7576C9.78924 19.7576 10.3332 20.3012 10.3332 20.9697C10.3332 21.6381 9.78957 22.1818 9.12109 22.1818Z" />
+          <path
+            d="M18.0911 17.9395C16.4202 17.9395 15.0608 19.2988 15.0608 20.9697C15.0608 22.6406 16.4202 24 18.0911 24C19.762 24 21.1213 22.6406 21.1213 20.9697C21.1213 19.2988 19.762 17.9395 18.0911 17.9395ZM18.0911 22.1818C17.4226 22.1818 16.879 21.6382 16.879 20.9697C16.879 20.3012 17.4226 19.7576 18.0911 19.7576C18.7595 19.7576 19.3031 20.3012 19.3031 20.9697C19.3031 21.6381 18.7595 22.1818 18.0911 22.1818Z" />
+          <path
+            d="M23.3478 5.91907C23.175 5.70209 22.9132 5.57576 22.6363 5.57576H6.71837L5.89201 1.39946C5.81959 1.03369 5.53112 0.749162 5.16414 0.681896L1.52782 0.0152435C1.03301 -0.0759748 0.560282 0.251633 0.469673 0.745552C0.379064 1.23947 0.706016 1.71309 1.19998 1.8037L4.22842 2.35884L6.89626 15.8432C6.98049 16.2689 7.35413 16.5759 7.78805 16.5759H20.5151C20.9384 16.5759 21.3054 16.2841 21.4009 15.871L23.522 6.68937C23.5844 6.41937 23.5202 6.13573 23.3478 5.91907ZM19.7921 14.7577H8.53467L7.07804 7.39422H21.4929L19.7921 14.7577Z" />
+        </svg>
+      </button>
+      <button class="header__menu-button">
+        <svg width="24" height="14" viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.75 1C0.75 0.585786 1.08579 0.25 1.5 0.25H22.5C22.9142 0.25 23.25 0.585786 23.25 1C23.25 1.41421 22.9142 1.75 22.5 1.75H1.5C1.08579 1.75 0.75 1.41421 0.75 1Z" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.75 7C0.75 6.58579 1.08579 6.25 1.5 6.25H22.5C22.9142 6.25 23.25 6.58579 23.25 7C23.25 7.41421 22.9142 7.75 22.5 7.75H1.5C1.08579 7.75 0.75 7.41421 0.75 7Z" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.75 13C0.75 12.5858 1.08579 12.25 1.5 12.25H22.5C22.9142 12.25 23.25 12.5858 23.25 13C23.25 13.4142 22.9142 13.75 22.5 13.75H1.5C1.08579 13.75 0.75 13.4142 0.75 13Z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+  <main class="catalog">
+    <div class="link">
+      <a class="link__item" href="#">Главная страница</a>
+      <span class="link__next">></span>
+      <a class="link__item" href="#">Каталог</a>
+    </div>
+    <h1 class="catalog__title">Каталог<sup>876</sup></h1>
+    <div class="content">
+      <aside class="filter">
+        <div id="filter__element-1" class="filter__element">
+          <span class="filter__element-span">По популярности</span>
+          <img class="filter__element-arrow" src="./src/assets/aside/arrow.svg" alt="Arrow" />
+        </div>
+        <div class="filter__content">
+          <div class="filter__content-checkbox">
+            <input type="checkbox" id="best" />
+            <label for="best">Сначала популярные</label>
           </div>
-          <div class="filter__content">
-            <div class="filter__content-checkbox">
-              <input type="checkbox" name="best" />
-              <label for="best">Сначала популярные</label>
-            </div>
-            <div class="filter__content-checkbox">
-              <input type="checkbox" name="lowest" />
-              <label for="lowest">Сначала устаревшие</label>
-            </div>
+          <div class="filter__content-checkbox">
+            <input type="checkbox" id="lowest" />
+            <label for="lowest">Сначала устаревшие</label>
           </div>
-          <div class="filter__price">
-            <span class="filter__price-span">Цена, ₽</span>
-            <div class="filter__price-form">
-              <input
-                type="number"
-                placeholder="от"
-                id="priceInput1"
-                class="filter__price-input"
-              />
-              <input
-                type="number"
-                placeholder="до"
-                id="priceInput2"
-                class="filter__price-input"
-              />
-            </div>
+        </div>
+        <div class="filter__price">
+          <span class="filter__price-span">Цена, ₽</span>
+          <div class="filter__price-form">
+            <input type="number" placeholder="от" id="priceInput1" class="filter__price-input" />
+            <input type="number" placeholder="до" id="priceInput2" class="filter__price-input" />
           </div>
-          <div id="filter__element-2" class="filter__element">
-            <span class="filter__element-span">Жанр</span>
-            <img
-              class="filter__element-arrow"
-              src="./src/assets/aside/arrow.svg"
-              alt="Arrow"
-            />
+        </div>
+        <div id="filter__element-2" class="filter__element">
+          <span class="filter__element-span">Жанр</span>
+          <img class="filter__element-arrow" src="./src/assets/aside/arrow.svg" alt="Arrow" />
+        </div>
+        <div class="filter__content">
+          <div class="filter__content-checkbox">
+            <input type="checkbox" id="action" />
+            <label for="action">Экшн</label>
           </div>
-          <div class="filter__content">
-            <div class="filter__content-checkbox">
-              <input type="checkbox" name="action" />
-              <label for="action">Экшн</label>
-            </div>
-            <div class="filter__content-checkbox">
-              <input type="checkbox" name="adventure" />
-              <label for="adventure">Приключения</label>
-            </div>
-            <div class="filter__content-checkbox">
-              <input type="checkbox" name="indie" />
-              <label for="indie">Инди</label>
-            </div>
-            <div class="filter__content-checkbox">
-              <input type="checkbox" name="card" />
-              <label for="card">Карточная игра</label>
-            </div>
-            <div class="filter__content-checkbox">
-              <input type="checkbox" name="roleplay" />
-              <label for="roleplay">Ролевая</label>
-            </div>
-            <div class="filter__content-checkbox">
-              <input type="checkbox" name="strategy" />
-              <label for="strategy">Стратегия</label>
-            </div>
-            <div class="filter__content-checkbox">
-              <input type="checkbox" name="openworld" />
-              <label for="openworld">Открытый мир</label>
-            </div>
-            <div class="filter__content-checkbox">
-              <input type="checkbox" name="casual" />
-              <label for="casual">Казуальная</label>
-            </div>
+          <div class="filter__content-checkbox">
+            <input type="checkbox" id="adventure" />
+            <label for="adventure">Приключения</label>
           </div>
-          <div id="filter__element-3" class="filter__element">
-            <span class="filter__element-span">Платформы</span>
-            <img
-              class="filter__element-arrow"
-              src="./src/assets/aside/arrow.svg"
-              alt="Arrow"
-            />
+          <div class="filter__content-checkbox">
+            <input type="checkbox" id="indie" />
+            <label for="indie">Инди</label>
           </div>
-          <div id="filter__element-4" class="filter__element">
-            <span class="filter__element-span">Активация</span>
-            <img
-              class="filter__element-arrow"
-              src="./src/assets/aside/arrow.svg"
-              alt="Arrow"
-            />
+          <div class="filter__content-checkbox">
+            <input type="checkbox" id="card" />
+            <label for="card">Карточная игра</label>
           </div>
-          <div id="filter__element-5" class="filter__element">
-            <span class="filter__element-span">Разработчик</span>
-            <img
-              class="filter__element-arrow"
-              src="./src/assets/aside/arrow.svg"
-              alt="Arrow"
-            />
+          <div class="filter__content-checkbox">
+            <input type="checkbox" id="roleplay" />
+            <label for="roleplay">Ролевая</label>
           </div>
-          <div id="filter__element-6" class="filter__element">
-            <span class="filter__element-span">Издатель</span>
-            <img
-              class="filter__element-arrow"
-              src="./src/assets/aside/arrow.svg"
-              alt="Arrow"
-            />
+          <div class="filter__content-checkbox">
+            <input type="checkbox" id="strategy" />
+            <label for="strategy">Стратегия</label>
           </div>
-          <div id="filter__element-7" class="filter__element">
-            <span class="filter__element-span">Особенности</span>
-            <img
-              class="filter__element-arrow"
-              src="./src/assets/aside/arrow.svg"
-              alt="Arrow"
-            />
+          <div class="filter__content-checkbox">
+            <input type="checkbox" id="openworld" />
+            <label for="openworld">Открытый мир</label>
           </div>
-          <div id="filter__element-8" class="filter__element">
-            <span class="filter__element-span">Тип товара</span>
-            <img
-              class="filter__element-arrow"
-              src="./src/assets/aside/arrow.svg"
-              alt="Arrow"
-            />
+          <div class="filter__content-checkbox">
+            <input type="checkbox" id="casual" />
+            <label for="casual">Казуальная</label>
           </div>
-        </aside>
-        <section class="games">
-          <div id="games__list" class="games__list">
-            <!-- div.games__list-item inject by gameListRender.js -->
-          </div>
-          <div class="pages">
-            <a class="pages__item" href="#">
-              <svg
-                width="20"
-                height="28"
-                viewBox="0 0 20 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.719575 15.3861L15.8058 27.4253C16.7654 28.1916 18.3213 28.1916 19.2805 27.4253C20.2398 26.6598 20.2398 25.4181 19.2805 24.6526L5.93161 13.9998L19.2802 3.34733C20.2394 2.58147 20.2394 1.33995 19.2802 0.574396C18.3209 -0.191465 16.765 -0.191466 15.8054 0.574395L0.719186 12.6138C0.239549 12.9967 7.27307e-07 13.4981 6.83453e-07 13.9997C6.39577e-07 14.5016 0.240016 15.0034 0.719575 15.3861Z"
-                  fill="#707070"
-                />
-              </svg>
-            </a>
-            <a class="pages__item" href="#">1</a>
-            <span class="pages__item">...</span>
-            <a class="pages__item" href="#">22</a>
-            <a class="pages__item pages__item_current" href="#">23</a>
-            <a class="pages__item" href="#">24</a>
-            <span class="pages__item">...</span>
-            <a class="pages__item" href="#">56</a>
-            <a class="pages__item" href="#">
-              <svg
-                width="20"
-                height="28"
-                viewBox="0 0 20 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19.2804 12.6139L4.19425 0.574675C3.23458 -0.191559 1.67865 -0.191559 0.719456 0.574675C-0.239819 1.34023 -0.239819 2.58187 0.719456 3.34736L14.0684 14.0002L0.719844 24.6527C-0.239431 25.4185 -0.239431 26.6601 0.719844 27.4256C1.67912 28.1915 3.23497 28.1915 4.19463 27.4256L19.2808 15.3862C19.7605 15.0033 20 14.5019 20 14.0003C20 13.4984 19.76 12.9966 19.2804 12.6139Z"
-                  fill="#707070"
-                />
-              </svg>
-            </a>
-          </div>
-          <div class="games__info">
-            <h3 class="games__info-title">Купить игры жанра Экшен</h3>
-            <p class="games__info-text">
-              В разделе с играми
-              <a class="games__info-link" href="#">Экшен жанра</a>, вы найдете
-              игры разнообразных форматов, будь-то с видом от первого или от
-              третьего лица, с одиночной кампанией или с мультиплеером. В играх
-              этого жанра Вас ждут большое количество перестрелок, беготни и
-              многого другого! Выбрав понравившуюся, Вы можете купить игру жанра
-              Экшен недорого и приступить к ее прохождению! В игре Вас будут
-              ждать захватывающие задания, целью которых будет кого-то
-              освободить или кого-то захватить! Отправляйтесь в открытый мир
-              одиночной игры для ее изучения или же сразу познайте все прелести
-              мультиплеерного режима, если в игре таковой имеется.
-            </p>
-            <h4 class="games__info-subtitle">Подзаголовок уровня H4</h4>
-            <p class="games__info-text">
-              Как говорилось ранее, игры жанра Экшен могут быть с видами от
-              третьего или от первого лица. Зачастую эти игры имеют вид от
-              первого лица, но не исключено, что в ней будет несколько режимов
-              видов. Она вообще может иметь вид сбоку и быть 2D платформером!
-              Игры этого жанра могут иметь также возможность играть в
-              кооперативном режиме, так что не забудьте пригласить в игру и
-              своих друзей или найдите новых с помощью специального поиска!
-              <br /><br />
-              Для кооперативного режима в игре могут быть как и
-              <a class="games__info-link" href="#">отдельные миссии</a>, так
-              может быть и возможность пройти всю игру вместе с друзьями и
-              прожить все ее смешные и грустные моменты. Так что скорее
-              выбирайте себе игру для покупки, приглашайте в нее друзей и
-              отправляйтесь в захватывающий мир игр Экшен жанра, которые подарят
-              вам много часов веселья и незабываемых миссий, которые вам надолго
-              запомнятся!
-            </p>
-          </div>
-        </section>
-      </div>
-      <div class="catalog__shop-info"></div>
-    </main>
-    <footer class="footer"></footer>
-  </body>
+        </div>
+        <div id="filter__element-3" class="filter__element">
+          <span class="filter__element-span">Платформы</span>
+          <img class="filter__element-arrow" src="./src/assets/aside/arrow.svg" alt="Arrow" />
+        </div>
+        <div id="filter__element-4" class="filter__element">
+          <span class="filter__element-span">Активация</span>
+          <img class="filter__element-arrow" src="./src/assets/aside/arrow.svg" alt="Arrow" />
+        </div>
+        <div id="filter__element-5" class="filter__element">
+          <span class="filter__element-span">Разработчик</span>
+          <img class="filter__element-arrow" src="./src/assets/aside/arrow.svg" alt="Arrow" />
+        </div>
+        <div id="filter__element-6" class="filter__element">
+          <span class="filter__element-span">Издатель</span>
+          <img class="filter__element-arrow" src="./src/assets/aside/arrow.svg" alt="Arrow" />
+        </div>
+        <div id="filter__element-7" class="filter__element">
+          <span class="filter__element-span">Особенности</span>
+          <img class="filter__element-arrow" src="./src/assets/aside/arrow.svg" alt="Arrow" />
+        </div>
+        <div id="filter__element-8" class="filter__element">
+          <span class="filter__element-span">Тип товара</span>
+          <img class="filter__element-arrow" src="./src/assets/aside/arrow.svg" alt="Arrow" />
+        </div>
+      </aside>
+      <section class="games">
+        <div id="games__list" class="games__list">
+          <!-- div.games__list-item inject by gameListRender.js -->
+        </div>
+        <div class="pages">
+          <a class="pages__item" href="#">
+            <svg width="20" height="28" viewBox="0 0 20 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.719575 15.3861L15.8058 27.4253C16.7654 28.1916 18.3213 28.1916 19.2805 27.4253C20.2398 26.6598 20.2398 25.4181 19.2805 24.6526L5.93161 13.9998L19.2802 3.34733C20.2394 2.58147 20.2394 1.33995 19.2802 0.574396C18.3209 -0.191465 16.765 -0.191466 15.8054 0.574395L0.719186 12.6138C0.239549 12.9967 7.27307e-07 13.4981 6.83453e-07 13.9997C6.39577e-07 14.5016 0.240016 15.0034 0.719575 15.3861Z"
+                fill="#707070" />
+            </svg>
+          </a>
+          <a class="pages__item" href="#">1</a>
+          <span class="pages__item">...</span>
+          <a class="pages__item" href="#">22</a>
+          <a class="pages__item pages__item_current" href="#">23</a>
+          <a class="pages__item" href="#">24</a>
+          <span class="pages__item">...</span>
+          <a class="pages__item" href="#">56</a>
+          <a class="pages__item" href="#">
+            <svg width="20" height="28" viewBox="0 0 20 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.2804 12.6139L4.19425 0.574675C3.23458 -0.191559 1.67865 -0.191559 0.719456 0.574675C-0.239819 1.34023 -0.239819 2.58187 0.719456 3.34736L14.0684 14.0002L0.719844 24.6527C-0.239431 25.4185 -0.239431 26.6601 0.719844 27.4256C1.67912 28.1915 3.23497 28.1915 4.19463 27.4256L19.2808 15.3862C19.7605 15.0033 20 14.5019 20 14.0003C20 13.4984 19.76 12.9966 19.2804 12.6139Z"
+                fill="#707070" />
+            </svg>
+          </a>
+        </div>
+        <div class="games__info">
+          <h3 class="games__info-title">Купить игры жанра Экшен</h3>
+          <p class="games__info-text">
+            В разделе с играми
+            <a class="games__info-link" href="#">Экшен жанра</a>, вы найдете
+            игры разнообразных форматов, будь-то с видом от первого или от
+            третьего лица, с одиночной кампанией или с мультиплеером. В играх
+            этого жанра Вас ждут большое количество перестрелок, беготни и
+            многого другого! Выбрав понравившуюся, Вы можете купить игру жанра
+            Экшен недорого и приступить к ее прохождению! В игре Вас будут
+            ждать захватывающие задания, целью которых будет кого-то
+            освободить или кого-то захватить! Отправляйтесь в открытый мир
+            одиночной игры для ее изучения или же сразу познайте все прелести
+            мультиплеерного режима, если в игре таковой имеется.
+          </p>
+          <h4 class="games__info-subtitle">Подзаголовок уровня H4</h4>
+          <p class="games__info-text">
+            Как говорилось ранее, игры жанра Экшен могут быть с видами от
+            третьего или от первого лица. Зачастую эти игры имеют вид от
+            первого лица, но не исключено, что в ней будет несколько режимов
+            видов. Она вообще может иметь вид сбоку и быть 2D платформером!
+            Игры этого жанра могут иметь также возможность играть в
+            кооперативном режиме, так что не забудьте пригласить в игру и
+            своих друзей или найдите новых с помощью специального поиска!
+            <br /><br />
+            Для кооперативного режима в игре могут быть как и
+            <a class="games__info-link" href="#">отдельные миссии</a>, так
+            может быть и возможность пройти всю игру вместе с друзьями и
+            прожить все ее смешные и грустные моменты. Так что скорее
+            выбирайте себе игру для покупки, приглашайте в нее друзей и
+            отправляйтесь в захватывающий мир игр Экшен жанра, которые подарят
+            вам много часов веселья и незабываемых миссий, которые вам надолго
+            запомнятся!
+          </p>
+        </div>
+      </section>
+    </div>
+    <div class="catalog__shop-info"></div>
+  </main>
+  <footer class="footer"></footer>
+</body>
+
 </html>
