@@ -3,3 +3,21 @@
 body {
   background: $dark-bg;
 }
+
+::selection {
+  color: $black;
+  background: $orange;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $gray;
+  border-radius: $rounded-full;
+}

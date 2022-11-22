@@ -75,6 +75,23 @@
           border-radius: $rounded-full;
         }
       }
+      &__content {
+        max-height: 200px;
+        height: 0;
+        overflow-y: auto;
+        &-checkbox {
+          @include font-size-span-regular($desktop-span);
+          color: $white;
+          accent-color: $orange;
+        }
+        &-checkbox:not(:last-child) {
+          margin-bottom: $mobile-margin-s;
+        }
+        &-open {
+          height: max-content;
+          margin-bottom: $mobile-margin-s;
+        }
+      }
     }
     .games {
       &__list {
