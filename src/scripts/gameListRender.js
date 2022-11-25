@@ -5,7 +5,7 @@ export default function gameListRender(elements) {
   elements.forEach((item) => {
     const element = `
       <div class="game-card">
-        <img class="game-card__img" src="${item.imageURL}" alt="Deathloop">
+        <img class="game-card__img" src="${item.imageURL}" alt="${item.name}">
         ${item.isNew ? `<span class="game-card__new">Новинка</span>` : ``}
         ${item.isSale ? `<span class="game-card__sale">Скидка</span>` : ``}
         <div class="game-card__info">
