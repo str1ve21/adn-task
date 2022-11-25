@@ -8,7 +8,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const mode =
   process.env.NODE_ENV === "development" ? "development" : "production";
 const isDev = process.env.NODE_ENV === "development";
-const isProd = process.env.NODE_ENV === "production";
+const isProd = !isDev;
 
 const optimization = () => {
   const config = {
